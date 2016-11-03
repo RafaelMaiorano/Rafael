@@ -74,9 +74,35 @@ public class Database
   }
 }
 
-public class Persona {}
+public class Persona
+{
+	public double IdPersona { get; set; }
+	public string Apellido { get; set; }
+	public string Nombres { get; set; }
+	public string Domicilio { get; set; }
+	public string AmpliacionDomicilio { get; set; }
+	public Localidad Localidad { get; set; }
+	public string CodigoPostal { get; set; }
+	public string Documento { get; set; }
+	public string TipoDocumento { get; set; }
+	public DateTime Nacimiento { get; set; }
+	public enum Sex { M, F, O };
+	public Sex Sexo { get; set; }
+	public String comentario { get; set; }
+	public TipoContacto Tipo { get; set; }
+	public Contacto InfoContacto { get; set; }
+}
 
-public class Empleado {}
+public class Contacto
+{
+	public int IdContacto { get; set; }
+	public string dato { get; set; }
+	public String comentario { get; set; }
+	public TipoContacto Tipo { get; set; }
+}
+
+
+public class Empleado { }
 
 public class Usuario {}
 
@@ -101,4 +127,6 @@ public class TipoContacto
   /// 
   /// </summary>
   public string RegExp { get; set; }
+  
+  
 }
