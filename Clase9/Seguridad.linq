@@ -8,7 +8,12 @@ void Main()
 {
   Database db = new Database();
   
-    db.Provincias.Dump();
+    //db.Provincias.Dump();
+	var xx = db.Localidades                                     // creo un tipo anonimo q ue contiene los datos del select
+	.Where(loc => loc.Nombre.ToLower().Contains("martin"))      //metodo de extension where con una funcion lambda como predicado
+	.Select(loc => new { loc.IDLocalidad, loc.Nombre}  )		//metodo de extension Select con una funcion lambda como predicado
+	.Dump();    												
+						    //
   	//db.TiposContacto.Dump();
 }
 
