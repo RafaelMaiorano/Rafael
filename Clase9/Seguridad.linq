@@ -9,7 +9,7 @@ void Main()
   Database db = new Database();
   
     db.Provincias.Dump();
-  	db.TiposContacto.Dump();
+  	//db.TiposContacto.Dump();
 }
 
 
