@@ -1,6 +1,6 @@
 <Query Kind="Program">
-  <Reference Relative="Datos.dll">D:\DESARROLLO\CURSO_EMPLEARTEC\src_git\Clase9\Datos.dll</Reference>
-  <Reference Relative="Newtonsoft.Json.dll">D:\DESARROLLO\CURSO_EMPLEARTEC\src_git\Clase9\Newtonsoft.Json.dll</Reference>
+  <Reference Relative="Datos.dll">D:\archivos\codigos\Clase9\Datos.dll</Reference>
+  <Reference Relative="Newtonsoft.Json.dll">D:\archivos\codigos\Clase9\Newtonsoft.Json.dll</Reference>
   <Namespace>Datos</Namespace>
 </Query>
 
@@ -8,8 +8,8 @@ void Main()
 {
   Database db = new Database();
   
-  //  db.Provincias.Dump();
-  db.TiposContacto.Dump();
+    db.Provincias.Dump();
+  	db.TiposContacto.Dump();
 }
 
 
@@ -30,7 +30,7 @@ public class Database
   
   //  agregar el resto...
   
-  public List<Provincia> Provincias { get { return Datos.Info.Provincias; } }
+  public List<Provincia> Provincias { get { return Datos.Info.Provincias; } }   //Si la libreria està declarada no es encesario usar aca, por ej datos se podrìa obviar.
 
   public List<Localidad> Localidades { get { return Datos.Info.Localidades; }}
   
@@ -97,6 +97,3 @@ public class TipoContacto
   /// </summary>
   public string RegExp { get; set; }
 }
-
-
-

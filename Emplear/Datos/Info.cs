@@ -19,7 +19,7 @@ namespace Datos
 
       if (Localidades == null)
       {
-        Localidades = JsonConvert.DeserializeObject<List<Localidad>>(localidades);
+        Localidades = JsonConvert.DeserializeObject<List<Localidad>>(localidades); //json.Convert convierte de json a .net
       }
 
       if (Provincias == null)
