@@ -57,11 +57,7 @@ public class Database
       new TipoContacto() { IDTipoContacto = 6, Descripcion = "Cuenta de Facebook" }
     };
     
-    _personas = new List<Persona>() 
-    {
-      //  agregar personas
-    };
-    
+   
     _empleados = new List<Empleado>() 
     {
       //  agregar Empleados
@@ -92,6 +88,20 @@ public class Persona
 	public TipoContacto Tipo { get; set; }
 	public Contacto InfoContacto { get; set; }
 }
+
+//	public List<Persona> Personas;
+
+//	Personas()
+//    {
+//	Personas = new List<Persona>() {
+//	  	new Personas() { IdPersona = 1, Apellido = "Maiorano"},
+//	  	new Personas() { IdPersona = 2, Apellido = "Thedy" },
+//	  	new Personas() { IdPersona = 3, Apellido = "Marques" },
+//	  	new Personas() { IdPersona = 4, Apellido = "Almada" },
+//	  	new Personas() { IdPersona = 5, Apellido = "Contesti"}
+//								};
+//	}	
+
 
 public class Contacto
 {
